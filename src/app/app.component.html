@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyChat</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-   <app-login></app-login> 
+<body class="p-8 bg-gray-100">
+  <header class="flex justify-start mb-8">
+    <img src="assets/Easy.png" alt="Logo" class="h-12">
+  </header>
+  <div class="flex flex-col lg:flex-row items-center justify-center">
+    <router-outlet></router-outlet> 
+  </div>
+ 
 </body>
 </html>
-
-
-<router-outlet />
