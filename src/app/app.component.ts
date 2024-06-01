@@ -1,14 +1,15 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { LogformComponent } from './login/logform/logform.component';
+import {LoginComponent} from './login/login.component'
+import { FormsModule } from '@angular/forms';
+
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,RouterOutlet,CommonModule,LoginComponent,LogformComponent ],
+  imports: [ RouterOutlet, CommonModule, LoginComponent, FormsModule ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

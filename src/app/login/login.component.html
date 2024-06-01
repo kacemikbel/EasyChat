@@ -1,30 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Back</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
- <img class="logo" src="/src/assets/Easy.png" alt="#">   
-
- <div class="example-container">
-    <p>Welcome back</p>
-    <form action="" >
-      <label for="email">Email Adress</label>
-      <input type="text">
-      <label for="password">Password</label>
-      <input type="text">
-      <button  >Log in    </button>
-      
-      <div>
-        <p>Create an acount </p>
-        <p>Forgot your password</p>
+<body class="p-8 ">
+<header>
+  <img src="assets/Easy.png" alt="aa">
+</header>
+<div class="flex">
+  <section class="" >
+    <div class="flex bg-slate-300 mx-14 px-10 py-10">
+      <div class="px-20 py-6  mt-32 bg-white w-full w-96"> <
+        <div class="mb-24">
+          <h3 class="font-bold text-2xl">Welcome Back</h3>
+        </div>
+        <form class="space-y-6 w-auto mb-10">
+          <div class="">
+            <label for="email" class="block mb-2 text-sm font-medium">Email Address</label>
+            <input type="email" name="email" id="email" class="w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-indigo-500">
+          </div>
+          <div>
+            <label for="password" class="block mb-2 text-sm font-medium">Password</label>
+            <input type="password" name="password" id="password" class="w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-indigo-500">
+          </div>
+          <div class="flex items-center justify-center">
+            <button type="submit" class="flex justify-center w-full mx-auto items-center px-4 py-2 bg-red-500 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2">
+              Sign In
+            </button>
+          </div>
+          <div class="flex  justify-between ">
+            <p class="text-sm font-normal">Create an account</p>
+            <p class="text-sm font-normal">Forgot your password</p>
+          </div>
+        </form>
       </div>
-    </form>
-</div>   
-<div class="image">
-    <img src="/src/assets/chatimage.png" alt="#">
+    </div>
+  </section>
+  <section>
+    <div class="flex justify-end m-4" style=" width: 800px ;"> <!-- Adjusted width to 800px -->
+      <img src="assets/chatimage.png" alt="a">
+    </div>
+  </section>
 </div>
 </body>
 </html>
