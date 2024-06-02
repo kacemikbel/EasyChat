@@ -14,7 +14,8 @@
     <form class="space-y-6" [formGroup]="SignupForm" (ngSubmit)="onSubmit()">
       <div>
         <label for="email" class="block mb-2 text-sm font-medium">Email Address</label>
-        <input type="email" name="email" formControlName="email" id="email" class="w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-indigo-500">
+        <input type="email" name="email" formControlName="email"  id="email" class="w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-indigo-500">
+        
       </div>
       <div>
         <label for="password" class="block mb-2 text-sm font-medium"> Create Password</label>
@@ -22,15 +23,15 @@
       </div>
       <div>
         <label for="password" class="block mb-2 text-sm font-medium"> Confirm Password</label>
-        <input type="password" name="password" id="password" class="w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-indigo-500">
+        <input type="password" name="password"  id="password" class="w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-indigo-500">
       </div>
       <div class="flex items-center justify-center">
-        <button type="submit" [disabled]="!SignupForm.valid" routerLink="/signup-component" class="flex justify-center w-full items-center px-4 py-2 bg-red-500 text-white rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2">
+        <button type="submit" [disabled]="!SignupForm.valid" routerLink="/login-component" class="flex justify-center w-full items-center px-4 py-2 bg-red-500 text-white rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2">
           Create account
         </button>
       </div>
       <div class="flex justify-between text-sm font-normal">
-        <a routerLink='/login-component' routerLinkActive="active" class="text-indigo-500 cursor-pointer hover:underline">Already have an account? </a>
+        <a routerLink='/login-component' routerLinkActive="active" class="text-indigo-500  hover:underline">Already have an account? </a>
       </div>
     </form>
   </section>

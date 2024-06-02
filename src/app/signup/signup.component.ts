@@ -13,6 +13,7 @@ export class SignupComponent {
   SignupForm = new FormGroup({
     email: new FormControl(''),
     password: new FormControl(''),
+    
 
   });
   onSubmit() {
@@ -23,5 +24,5 @@ export class SignupComponent {
 
 
 
-  
+
 }
